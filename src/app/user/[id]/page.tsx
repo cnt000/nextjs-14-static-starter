@@ -6,7 +6,7 @@ export async function generateStaticParams() {
 
 async function getPaziente(params: any) {
   const res = await fetch(
-    `https://www.gdsuite.it/ws/select_paziente_data.php?pk_id_pt=${params.id}`,
+    `https://www.xxxxxx.it/ws/select_paziente_data.php?pk_id_pt=${params.id}`,
   );
   const post = await res.json();
 

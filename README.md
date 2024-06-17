@@ -32,7 +32,7 @@ Prettier:
 yarn prettier
 ```
 
-_Temporary deploy to SFTP GDSuite:_
+_Temporary deploy to SFTP:_
 
 ```bash
 yarn deploy
@@ -69,7 +69,3 @@ yarn build
 ```
 
 Open the `ymv2/` from a live server or copy to a static web server.
-
-You can also temporary build and deploy to a 'test for production' folder in the gdsuite web server and open:
-
-[https://www.gdsuite.it/ymv2/](https://www.gdsuite.it/ymv2/)

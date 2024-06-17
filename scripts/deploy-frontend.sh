@@ -6,10 +6,10 @@ then
    exit 1
 fi
 
-FTP_ADDRESS=web.gdsuite.it
+FTP_ADDRESS=web.xxxxxx.it
 YMV2_FOLDER=ymv2
 YMV2_FTP_FOLDER=/var/www/html/ngb/ymv2/
-PROD_WEB_ADDRESS=www.gdsuite.it
+PROD_WEB_ADDRESS=www.xxxxxx.it
 
 read -r -p "DO YOU WANT TO BUILD ⚠️ ⚠️ ⚠️ ⚠️ ? [y/N] " response
 if [[ "$response" =~ ^(yes|y)$ ]]
@@ -25,7 +25,7 @@ then
 fi
 
 echo "Deploy Youmeals v2 POC to $YMV2_FTP_FOLDER"
-rsync -avP ${YMV2_FOLDER}/* ngb@${FTP_ADDRESS}:${YMV2_FTP_FOLDER}
+rsync -avP ${YMV2_FOLDER}/* xxx@${FTP_ADDRESS}:${YMV2_FTP_FOLDER}
 echo "Deployed to ${FTP_ADDRESS}!"
 
 echo "Visit https://$PROD_WEB_ADDRESS/$YMV2_FOLDER"
